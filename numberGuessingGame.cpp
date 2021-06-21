@@ -95,6 +95,7 @@ void playGame() {
 // The main function
 int main() {
    srand(time(NULL));
+   system("color 5E");
    
    cout << "Play number guessing game" << endl;
    cout << "You have to guess a number in the range 0 to 100" << endl;
@@ -131,7 +132,6 @@ int main() {
          difficulty(diff);
       }
    }
-   
    system("pause");
    return 0;
 }
