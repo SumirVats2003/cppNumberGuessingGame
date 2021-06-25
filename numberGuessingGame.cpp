@@ -16,6 +16,7 @@ int chances = 0;
 // Difficulty deciding function
 void difficulty(int choice)
 {
+    loop:
     while (true)
     {
        if (choice == 1)
@@ -47,6 +48,7 @@ void difficulty(int choice)
           cout << "Enter a valid input" << endl;
           cout << "Enter difficulty: ";
           cin >> choice;
+          goto loop;
        }
     }
 }
